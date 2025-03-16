@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Elfy.BM">
+    <meta property="og:description" content="Un blog minimalista sobre estilo y bienestar.">
+    <meta property="og:image" content="https://example.com/imagen.jpg">
+    <meta property="og:url" content="https://example.com">
+    <title>Elfy.BM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elfy.BM</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#Redes">Redes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Descubre un estilo de vida saludable</h2>
+    </section>
+
+    <section id="blog" class="posts">
+       
+            <div class="post">
+                <img src="flores-simbolismo-espiritualidad_09ff3f15_1200x1200.jpg" alt="Imagen de la publicación">
+                <h3>comienzo</h3>
+                <p>:)</p>
+                
+                <button class="btn like-btn" onclick="darLike(this)">❤️ 0</button>
+                <button class="btn delete-btn" onclick="eliminarPost(this)">🗑️ Eliminar</button>
+            </div>
+            
+      
+    </section>
+    
+
+    <section id="nueva-publicacion" class="add-post">
+        <h2>Agrega una nueva publicación</h2>
+        <input type="text" id="titulo" placeholder="Título">
+        <textarea id="contenido" placeholder="Escribe tu publicación..."></textarea>
+        <input type="file" id="imagenInput" accept="image/*">
+        <button onclick="agregarPublicacion()">Publicar</button>
+    </section>
+
+    <footer>
+        <section id="Redes" class="Redes">
+            <h2>Síguenos en Redes Sociales</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/elfa.bm?utm_source=qr&igsh=M25sNmtjZDR6cm8w" class="social-btn">Instagram</a>
+                <a href="https://youtube.com/@efbm160?si=ovjdWqwNyeHe7OPD" class="social-btn">Youtube</a>
+                <a href="#" class="social-btn">Facebook</a>
+            </div>
+        </section>
+    
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Sobre Elfy.BM</h2>
+                <p>Un espacio donde comparto ideas, pensamientos e inspiración a través de publicaciones y fotos.</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <p>Email: elfabedonmaldonado@gmail.com</p>
+                <p>© 2025 Elfy.BM - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
